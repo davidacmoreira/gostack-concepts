@@ -22,6 +22,17 @@ function App() {
     setPages([...pages, `Page ${sum(3, Date.now())}`]);
   }
 
+  async function handleAddProject() {
+    const response = await api.post('projects', {
+      title: `Project ${sum(3, Date.now())}`,
+      owner: 'owner'
+    });
+
+    const project = response.data;
+
+    setProjects([...projects, project]);
+  }
+
   return (
     <>
       <img width={100} src={rocketseatImg} />
@@ -39,6 +50,8 @@ function App() {
           {projects.map(project => <li key={project.id}>{project.title}</li>)}
         </ul>
       </Header>
+
+      <button type="button" onClick={handleAddProject}>Add Project</button>
     </>
   );
 }
