@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import './App.css';
+import rocketseatImg from './assets/rocketseat.png';
+
 import Header from './components/Header';
 
 import { sum } from './sum';
@@ -13,6 +16,8 @@ function App() {
 
   return (
     <>
+      <img width={100} src={rocketseatImg} />
+
       <Header title="Homepage">
         <ul>
           <li>Projects</li>
