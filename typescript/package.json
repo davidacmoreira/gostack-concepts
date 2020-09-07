@@ -1,0 +1,15 @@
+{
+  "name": "concepts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/davidacmoreira/gostack-concepts.git",
+  "author": "David Moreira <davidmoreira37@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
